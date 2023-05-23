@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+<head> 
+    <style>
+        div {
+          background: #de9a44;
+          margin: 3px;
+          width: 80px;
+          height: 40px;
+          display: none;
+          float: left;
+        }
+        </style>
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>  
+</head>  
+<body>
+<p>  
+This is a little poem:  
+Twinkle, twinkle, little star  
+How I wonder what you are  
+Up above the world so high  
+Like a diamond in the sky 
+Twinkle, twinkle little star
+How I wonder what you are 
+</p>
+Click me!
+<div></div>
+<div></div>
+<div></div>
+ 
+<script>
+$( document.body ).click(function () {
+  if ( $( "div" ).first().is( ":hidden" ) ) {
+    $( "div" ).slideDown( "slow" );
+  } else {
+    $( "div" ).hide();
+  }
+});
+</script>
+ 
+</body>  
+</html>
